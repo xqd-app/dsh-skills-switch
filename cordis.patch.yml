@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-skill-switch
+      name: '@local/dsh-skill-switch'

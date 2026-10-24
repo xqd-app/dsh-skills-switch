@@ -53,3 +53,7 @@ The host half also registers `/skills`, so the same operations work from the com
 ## License
 
 MIT
+背景：
+很多大规模技能包都是为复杂项目准备的，但在中小型任务中，真正需要的往往只是一小部分。即使只是加载 2–3 个较重的技能，例如 brainstorming、writing-plans 和 TDD，也可能额外带来 6k–9k token 的上下文成本，约相当于一次认真对话成本的 30%–40%。而在 subagent-driven development 场景中，这种开销会被进一步放大，因为每个任务都可能派发一个新的子代理，并为其创建独立上下文。实际情况下，总成本往往会提升 2–4 倍。
+
+dsh-skills-switch 的目标，就是把这些子代理和技能做成可控的开关。只有在当前任务真正需要时才加载对应技能和子代理，从而显著降低 token 消耗、减少无效上下文、提升开发效率，并让 agent-driven workflow 更加可控、更适合真实项目使用。”
